@@ -1,0 +1,8 @@
+.progress {
+    height: 20px;
+    border-radius: 20px;
+}
+
+.card-body {
+    padding: 1rem;
+}
