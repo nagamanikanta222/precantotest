@@ -69,20 +69,25 @@ var columnDefs = [
   headerName: 'Sub-Dept' },
 
   { field: "Amt",
-  headerName: 'Amt Remaining'
+  headerName: 'Amt ($)'
  },  
+
+ { field: "AmtRemaining",
+ headerName: 'Amt Remaining'
+}, 
   { field: "Receipt",
-  headerName: 'Receipt' },
+  headerName: 'Last Receipt Date' },
   { field: "LatestUpdate",
+  
   headerName: 'Latest Update'  },
 ];
 
 
 // specify the data
 var rowData = [
-  { PO: "PO12771", Vendor: "H&H", StartDate: "2/1/2020", EndDate:"1/31/2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"7/15/2020", LatestUpdate:"" },
-  { PO: "PO13052", Vendor: "ABC Software", StartDate: "2/1/2020", EndDate:"1/31/2021", SubDept: "Core" , Amt:"0.4M", Receipt:"7/15/2020", LatestUpdate:"" },
-  { PO: "PO24411", Vendor: "Group 123", StartDate: "2/1/2020", EndDate:"1/31/2021", SubDept: "Core" , Amt:"0.4M", Receipt:"7/15/2020", LatestUpdate:"" },
+  { PO: "PO12771", Vendor: "H&H", StartDate: "2/1/2020", EndDate:"1/31/2021", SubDept: "Hardware" , Amt:"0.4M", AmtRemaining:"0.2M", Receipt:"7/15/2020", LatestUpdate:"" },
+  { PO: "PO13052", Vendor: "ABC Software", StartDate: "5/1/2020", EndDate:"12/31/2021", SubDept: "Core" , Amt:"0.2M", AmtRemaining:"0.1M", Receipt:"12/15/2020", LatestUpdate:"" },
+  { PO: "PO24411", Vendor: "Group 123", StartDate: "12/1/2020", EndDate:"1/15/2021", SubDept: "Core" , Amt:"0.2M", AmtRemaining:"0.0M", Receipt:"12/15/2020", LatestUpdate:"" },
 
 ];
 
