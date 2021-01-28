@@ -12,8 +12,8 @@
  }
 
 .alerts li {
-    border-bottom: 1px solid #ebebeb;
-    padding: 0.1rem 0rem;
+    border-top: 1px solid #ebebeb;
+    padding: 0.23rem 0rem;
     font-size: 12px;
 }
 
