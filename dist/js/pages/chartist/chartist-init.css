@@ -19,7 +19,7 @@
 .ct-svg-chart .ct-series-a .ct-line,
 .user-analytics .ct-series-a .ct-line,
 .user-analytics .ct-series-a .ct-point {
-    stroke: grey;
+    stroke: #d70206;
 }
 
 .ct-sm-line-chart .ct-series-b .ct-line,
@@ -191,8 +191,8 @@
 }
 
 .ct-legend .ct-series-0:before {
-    background-color: grey;
-    border-color: grey;
+    background-color: #d70206;
+    border-color: #d70206;
 }
 
 .ct-legend .ct-series-1:before {
