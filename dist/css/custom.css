@@ -4,6 +4,13 @@
     list-style: none;
 }
 
+.alerts a {
+   color: black;
+}
+.alerts a:hover {
+    color: black;
+ }
+
 .alerts li {
     border-bottom: 1px solid #ebebeb;
     padding: 0.28rem 0rem;

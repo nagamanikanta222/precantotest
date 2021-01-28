@@ -5,14 +5,22 @@ $(function() {
     new Chartist.Line('.ct-sm-line-chart', {
         labels: ['Q1(A)', 'Q2(A)', 'Q3(F)', 'Q4'],
         series: [
-            [85, 115, 139, 198]
+            [85, 115, 139, 199]
          
         ]
     }, {
         fullWidth: true,
 
+        // plugins: [
+        //     Chartist.plugins.tooltip()
+        // ],
         plugins: [
-            Chartist.plugins.tooltip()
+
+            Chartist.plugins.tooltip(),
+            ctPointLabels({
+                textAnchor: 'middle'
+            }),
+       
         ],
         showArea: true,
         chartPadding: {
