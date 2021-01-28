@@ -1,8 +1,10 @@
-.progress {
-    height: 20px;
-    border-radius: 20px;
+.alerts {
+    margin-left: 0;
+    padding-left: 20px;
+    list-style: none;
 }
 
-.card-body {
-    padding: 1rem;
+.alerts li {
+    border-bottom: 1px solid gainsboro;
+    padding: 0.64rem 0rem;
 }

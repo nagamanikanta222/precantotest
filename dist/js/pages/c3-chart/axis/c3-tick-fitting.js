@@ -7,7 +7,7 @@
 $(function() {
     var i = c3.generate({
         bindto: "#tick-fitting",
-        size: { height: 400 },
+        size: { height: 300 },
         color: { pattern: ["#2962FF", "#E91E63"] },
         data: {
             x: "x",
