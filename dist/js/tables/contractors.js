@@ -77,6 +77,7 @@ var columnDefs = [
   headerName: 'Latest Update'  },
 ];
 
+
 // specify the data
 var rowData = [
   { PO: "PO12771", Vendor: "H&H", StartDate: "01-02-2020", EndDate:"31-01-2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"15-07-2020", LatestUpdate:"image" },
@@ -93,6 +94,8 @@ var gridOptions = {
   rowData: rowData,
   rowHeight: 30,
   headerHeight: 30,
+  
+  
 };
 
 function sizeToFit() {
@@ -106,5 +109,27 @@ var eGridDiv = document.querySelector('#contractorsTable');
 new agGrid.Grid(eGridDiv, gridOptions);
 sizeToFit();
 
+
+var defaultColDef = {
+  flex: 1,
+  resizable: true,
+  sortable: true,
+  wrapText: true,
+  autoHeight: true,
+  headerComponentParams: {
+      template:
+          '<div class="ag-cell-label-container" role="presentation">' +
+          '  <span ref="eMenu" class="ag-header-icon ag-header-cell-menu-button"></span>' +
+          '  <div ref="eLabel" class="ag-header-cell-label" role="presentation">' +
+          '    <span ref="eSortOrder" class="ag-header-icon ag-sort-order"></span>' +
+          '    <span ref="eSortAsc" class="ag-header-icon ag-sort-ascending-icon"></span>' +
+          '    <span ref="eSortDesc" class="ag-header-icon ag-sort-descending-icon"></span>' +
+          '    <span ref="eSortNone" class="ag-header-icon ag-sort-none-icon"></span>' +
+          '    <span ref="eText" class="ag-header-cell-text" role="columnheader" style="white-space: normal;"></span>' +
+          '    <span ref="eFilter" class="ag-header-icon ag-filter-icon"></span>' +
+          '  </div>' +
+          '</div>',
+  },
+};
 
 

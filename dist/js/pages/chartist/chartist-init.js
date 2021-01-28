@@ -3,7 +3,7 @@ $(function() {
     //Simple line chart 
 
     new Chartist.Line('.ct-sm-line-chart', {
-        labels: ['Q1(A)', 'Q2(A)', 'Q3(F)', 'Q4'],
+        labels: ['Q1(A)', 'Q2(A)', 'Q3(F)', 'Q4(P)'],
         series: [
             [85, 115, 139, 199]
          
