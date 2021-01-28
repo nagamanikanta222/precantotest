@@ -80,12 +80,10 @@ var columnDefs = [
 
 // specify the data
 var rowData = [
-  { PO: "PO12771", Vendor: "H&H", StartDate: "01-02-2020", EndDate:"31-01-2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"15-07-2020", LatestUpdate:"image" },
-  { PO: "PO12771", Vendor: "H&H", StartDate: "01-02-2020", EndDate:"31-01-2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"15-07-2020", LatestUpdate:"image" },
-  { PO: "PO12771", Vendor: "H&H", StartDate: "01-02-2020", EndDate:"31-01-2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"15-07-2020", LatestUpdate:"image" },
-  { PO: "PO12771", Vendor: "H&H", StartDate: "01-02-2020", EndDate:"31-01-2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"15-07-2020", LatestUpdate:"image" },
-  { PO: "PO12771", Vendor: "H&H", StartDate: "01-02-2020", EndDate:"31-01-2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"15-07-2020", LatestUpdate:"image" },
-  { PO: "PO12771", Vendor: "H&H", StartDate: "01-02-2020", EndDate:"31-01-2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"15-07-2020", LatestUpdate:"image" },
+  { PO: "PO12771", Vendor: "H&H", StartDate: "2/1/2020", EndDate:"1/31/2021", SubDept: "Hardware" , Amt:"0.4M", Receipt:"7/15/2020", LatestUpdate:"" },
+  { PO: "PO13052", Vendor: "ABC Software", StartDate: "2/1/2020", EndDate:"1/31/2021", SubDept: "Core" , Amt:"0.4M", Receipt:"7/15/2020", LatestUpdate:"" },
+  { PO: "PO24411", Vendor: "Group 123", StartDate: "2/1/2020", EndDate:"1/31/2021", SubDept: "Core" , Amt:"0.4M", Receipt:"7/15/2020", LatestUpdate:"" },
+
 ];
 
 // let the grid know which columns and what data to use
