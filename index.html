@@ -21,6 +21,8 @@
     <link href="assets/extra-libs/css-chart/css-chart.css" rel="stylesheet">
 
 
+
+
     <!-- Custom CSS -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -199,12 +201,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- Comment -->
-                        <!-- ============================================================== -->
+  
                         <li class="nav-item dropdown border-right">
                             <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="mdi mdi-bell-outline font-22"></i>
@@ -1669,7 +1666,7 @@
                                 <div class="col-md-12">
                                     <div class="d-flex no-block align-items-center">
                                         <div>
-                                            <h4 class="card-title">Total OPEX <span class="text-primary">($s)</span></h4>
+                                            <h4 class="card-title">Total OPEX ($s)</span></h4>
                                         </div>
                                         <div class="ml-auto">
                                             <table class="text-muted font-light text-right">
@@ -1688,8 +1685,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12 mt-2">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%; height: 6px;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress ">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 60%; height: 6px;" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1771,26 +1768,133 @@
                 <!-- Email campaign chart -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Headcount</h4>
-                                <div class="ct-bar-chart pb-4" style="height: 300px;"></div>
+                                <table class="small table table-sm table-striped table-hover text-right">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <td class="text-left">
+                                                Sub-Dept
+                                            </td>
+                                            <td>
+                                                Plan
+                                            </td>
+                                            <td>
+                                                Forecast
+                                            </td>
+                                            <td>
+                                                Actuals
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-nowrap">
+                                        <tr>
+                                            <td class="text-left">
+                                                Core
+                                            </td>
+                                            <td>
+                                                73
+                                            </td>
+                                            <td>
+                                                75
+                                            </td>
+                                            <td>
+                                                70 <i class="fas fa-square" style="color:dodgerblue"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                Eng Ops
+                                            </td>
+                                            <td>
+                                                15
+                                            </td>
+                                            <td>
+                                                16
+                                            </td>
+                                            <td>
+                                                16 <i class="fas fa-square" style="color:darkred"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                Hardware
+                                            </td>
+                                            <td>
+                                                21
+                                            </td>
+                                            <td>
+                                                23
+                                            </td>
+                                            <td>
+                                                22 <i class="fas fa-square" style="color:darkred"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                ML
+                                            </td>
+                                            <td>
+                                                25
+                                            </td>
+                                            <td>
+                                                27
+                                            </td>
+                                            <td>
+                                                29 <i class="fas fa-square" style="color:darkred"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">
+                                                Platform
+                                            </td>
+                                            <td>
+                                                64
+                                            </td>
+                                            <td>
+                                                67
+                                            </td>
+                                            <td>
+                                                62 <i class="fas fa-square" style="color:dodgerblue"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <td class="text-left text-dark">
+                                                Totals
+                                            </td>
+                                            <td>
+                                                198
+                                            </td>
+                                            <td>
+                                                208
+                                            </td>
+                                            <td>
+                                                199 <i class="fas fa-square" style="color:darkred"></i>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col-lg-4 col-md-6 order-lg-2 order-md-3">
+                    
+                    <div class="col-lg-6 col-md-6 order-lg-2 order-md-3">
+             
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Quarterly Trend</h4>
-                                <div id="tick-fitting" style="height: 300px;"></div>
+                                <div class="ct-sm-line-chart" style="height: 205px;" ></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 order-lg-3 order-md-2">
+                    <div class="col-lg-3 col-md-6 order-lg-3 order-md-2">
 
-                        <div class="card pb-2">
+                        <div class="card">
                             <div class="card-body m-b-0">
                                 <h4 class="card-title">What to watch </h4>
                                 <ul class="alerts">
@@ -1815,7 +1919,7 @@
                 <!-- ============================================================== -->
                 <div class="row">
                     <!-- column -->
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-5 col-md-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Headcount</h4>
@@ -2011,199 +2115,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="card">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="card"  style="height: 305px;">
                             <div class="card-body">
-                                <h4 class="card-title">Headcount</h4>
-                                <table class="small table table-striped table-sm table-hover">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <td>
-                                                PQ
-                                            </td>
-                                            <td>
-                                                CQ
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Sub-Dept
-                                            </td>
-                                            <td>
-                                                Ending HC
-                                            </td>
-                                            <td>
-                                                Starts
-                                            </td>
-                                            <td>
-                                                Pending
-                                            </td>
-                                            <td>
-                                                Terms
-                                            </td>
-                                            <td>
-                                                Transfers
-                                            </td>
-                                            <td>
-                                                TBHs
-                                            </td>
-                                            <td>
-                                                Ending HC Fcst
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Core
-                                            </td>
-                                            <td>
-                                                45
-                                            </td>
-                                            <td>
-                                                22
-                                            </td>
-                                            <td>
-                                                1
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                                2
-                                            </td>
-                                            <td>
-                                                70
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Eng Ops
-                                            </td>
-                                            <td>
-                                                12
-                                            </td>
-                                            <td>
-                                                3
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                                1
-                                            </td>
-                                            <td>
-                                                16
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Hardware
-                                            </td>
-                                            <td>
-                                                14
-                                            </td>
-                                            <td>
-                                                9
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                -1
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                                22
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                ML
-                                            </td>
-                                            <td>
-                                                18
-                                            </td>
-                                            <td>
-                                                11
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                                29
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                Platform
-                                            </td>
-                                            <td>
-                                                50
-                                            </td>
-                                            <td>
-                                                12
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                -2
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                                2
-                                            </td>
-                                            <td>
-                                                62
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <thead>
-                                        <tr>
-                                            <td>
-                                                Totals
-                                            </td>
-                                            <td>
-                                                139
-                                            </td>
-                                            <td>
-                                                57
-                                            </td>
-                                            <td>
-                                                1
-                                            </td>
-                                            <td>
-                                                -3
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                5
-                                            </td>
-                                            <td>
-                                                199
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                </table>
+                                <h4 class="card-title">Contractors ($)</h4>
+                                <div class="grid-wrapper">
+                                    <div id="contractorsTable" style="height: 230px; width: 100%;;" class="ag-theme-alpine">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2578,6 +2497,10 @@
     <script src="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
     <script src="dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="https://unpkg.com/@ag-grid-community/all-modules@25.0.0/dist/ag-grid-community.min.js"></script>
+    <script src="dist/js/tables/contractors.js"></script>
+
+
 </body>
 
 </html>

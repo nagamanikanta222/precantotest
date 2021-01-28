@@ -3,11 +3,10 @@ $(function() {
     //Simple line chart 
 
     new Chartist.Line('.ct-sm-line-chart', {
-        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        labels: ['Q1(A)', 'Q2(A)', 'Q3(F)', 'Q4'],
         series: [
-            [12, 9, 7, 8, 5],
-            [2, 1, 3.5, 7, 3],
-            [1, 3, 4, 5, 6]
+            [85, 115, 139, 198]
+         
         ]
     }, {
         fullWidth: true,
@@ -15,6 +14,7 @@ $(function() {
         plugins: [
             Chartist.plugins.tooltip()
         ],
+        showArea: true,
         chartPadding: {
             right: 40
         }
