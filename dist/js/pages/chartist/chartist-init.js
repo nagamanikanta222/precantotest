@@ -19,7 +19,7 @@ $(function() {
             Chartist.plugins.tooltip(),
             ctPointLabels({
                 textAnchor: 'middle',
-                // labelOffset:{x:15,y:20} 
+                labelOffset:{x:0,y:-7} 
 
             }),
        
