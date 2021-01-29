@@ -67,3 +67,30 @@ div.ag-theme-alpine div.ag-row{
 .ag-theme-alpine .ag-row-even{
     background-color:#f2f2f2 !important;
 }
+
+
+@media (max-width:1024px) {
+    .whatTOWatchTable{
+        overflow-y: scroll;
+        height: 200px;
+    }
+    .card-title{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .Headcount{
+        margin-bottom: 0.0rem;
+    }
+    .middleCareHeigh{
+        height: 275px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card-title{
+        font-size: 1.125rem;
+        font-weight: bold;
+    }
+   
+}
+

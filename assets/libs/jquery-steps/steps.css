@@ -344,6 +344,7 @@ File: css
     .wizard-content .wizard.vertical>.steps {
         width: 15%
     }
+  
 }
 
 @media (max-width:480px) {
@@ -363,3 +364,4 @@ File: css
         float:none;
     }
 }
+
