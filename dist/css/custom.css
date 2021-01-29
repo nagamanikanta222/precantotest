@@ -94,3 +94,114 @@ div.ag-theme-alpine div.ag-row{
    
 }
 
+
+/* main */
+
+.headborder{
+    border-right: 2px solid white !important;
+ 
+}
+
+
+.table th, .table td
+td {
+    border: none;
+}
+table {
+    border: 0px solid #CCC;
+    border-collapse: collapse;
+}
+.square {
+    border: 1px solid #d9d9d9;
+    padding: 0.1rem 0.5rem;
+    border-radius: 5px;
+    float: right;
+    margin-top: 4px;
+    color: #d9d9d9;
+    
+  }
+.sqaurebox{
+margin-top: -16px;
+}
+.sqaurebox li{
+  list-style: none;
+}
+.totalborder{
+    border-right: 2px solid white !important;
+}
+/* End */
+.filter-title{
+    margin: 0;
+    padding-left: 15%;
+}
+/* apply CSS to the select tag of  
+         .dropdown-container div*/ 
+  
+.filter-container  { 
+        /* for Firefox */ 
+        -moz-appearance: none; 
+        /* for Safari, Chrome, Opera */ 
+        -webkit-appearance: none; 
+        display: inline-block;
+        width: 75%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+} 
+  
+/* for IE10 */ 
+.filter-container     ::-ms-expand { 
+        display: none; 
+      } 
+.filter-container option{
+        padding: 10px 10px;
+    }
+.insights{
+        float: right;
+    }
+
+
+/* css written by Praveen Nayakudi */
+.theme-color{
+    background-color: #233242 !important;
+}
+.theme-color>tr>th{
+    border-right: #ebebeb 2px solid;
+}
+.filter-title{
+    margin: 0;
+    padding-left: 15%;
+}
+/* apply CSS to the select tag of  
+         .dropdown-container div*/ 
+  
+.filter-container  { 
+        /* for Firefox */ 
+        -moz-appearance: none; 
+        /* for Safari, Chrome, Opera */ 
+        -webkit-appearance: none; 
+        display: inline-block;
+        width: 80%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        padding: 5px;
+} 
+  
+/* for IE10 */ 
+.filter-container ::-ms-expand { 
+        display: none; 
+      } 
+.filter-container option{
+        padding: 10px 10px;
+        
+    }
+.insights{
+        float: right;
+        margin-top: 36px;
+    }
+.filter-col{
+    padding: 0;
+}
+.table th, .table td{
+    border: none;
+}
