@@ -26,9 +26,8 @@
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(assets/images/Precanto_faviconbg.png) center center; ">
             <div class="auth-box">
                 <div id="loginform">
-                    <div class="logo m-t-20">
+                    <div class="logo m-t-20 m-b-20">
                         <span class="db"><img src="assets/images/loginlogo.png" alt="logo" /></span>
-                        <h5 class="font-medium m-t-20 m-b-20">Sign In to Admin</h5>
                     </div>
                     <!-- Form -->
                     <div class="row">
@@ -51,19 +50,19 @@
                                         <div class="custom-control custom-checkbox d-flex align-items-center">
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                                             <label class="custom-control-label" for="customCheck1">Remember me</label>
-                                            <a href="javascript:void(0)" id="to-recover" class="text-dark ml-auto"><i class="fa fa-lock m-r-5"></i> Forgot pwd?</a>
+                                            <a href="login.html" id="to-recover" class="text-dark ml-auto"><i class="fa fa-lock m-r-5"></i> Forgot pwd?</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group text-center">
                                     <div class="col-xs-12 p-b-20">
-                                        <button class="btn btn-block btn-lg btn-info" type="submit">Log In</button>
+                                        <a href="index.html"><button class="btn btn-block btn-lg btn-info" type="submit">Log In</button></a>
                                     </div>
                                 </div>
                   
                                 <div class="form-group m-b-20 m-t-10">
                                     <div class="col-sm-12 text-center">
-                                        Don't have an account? <a href="authentication-register1.html" class="text-info m-l-5"><b>Sign Up</b></a>
+                                        Don't have an account? <a href="login.html" class="text-info m-l-5"><b>Sign Up</b></a>
                                     </div>
                                 </div>
                             </form>
@@ -98,9 +97,13 @@
         </div>
     </div>
 
+    
+
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/cookies.js"></script>
+
     <script>
     $('[data-toggle="tooltip"]').tooltip();
     $(".preloader").fadeOut();
