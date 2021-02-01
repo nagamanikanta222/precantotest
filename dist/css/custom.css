@@ -212,3 +212,10 @@ margin-top: -16px;
 .anchorTag:hover{
     box-shadow: 1px 1px 10px #CCC ;
 }
+
+#chartTable{
+    display: none;
+}
+.rowClick{
+    cursor: pointer !important;
+}

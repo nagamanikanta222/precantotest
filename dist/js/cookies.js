@@ -62,4 +62,3 @@
 	          var expires = "expires=" + d.toGMTString();
 	          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 	        }
-	    //    cookie based authentication ends here 

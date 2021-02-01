@@ -1640,7 +1640,7 @@
                                 <table class="small table table-sm table-hover">
                                     <thead class="thead-dark ">
                             
-                                    <tr class="theme-color">
+                                    <tr class="theme-color" >
                                         <th>Departments</th>
                                        <th class="text-center">Q1-PY</th>
                                        <th class="text-center">Q2-PY</th>
@@ -1650,7 +1650,7 @@
                                    </tr>
                                     </thead>
                                     <tbody class="text-nowrap">
-                                        <tr>
+                                        <tr id="test">
                                             <td>Core</td>
                                             <td class="text-right">1</td>
                                             <td class="text-right">-</td>
@@ -1680,32 +1680,57 @@
                                          <tr>
                                             <td>ML</td>
                                             <td class="text-right">1</td>
+                                            <td class="text-right">2</td>
                                             <td class="text-right">-</td>
                                             <td class="text-right">-</td>
-                                            <td class="text-right">1</td>
                                   
                                             
                                         </tr>
                                     <tr>
                                         <td>Platform</td>
-                                        <td class="text-right">1</td>
-                                        <td class="text-right">1</td>
                                         <td class="text-right">-</td>
-                                        <td class="text-right">1</td>
+                                        <td class="text-right">-</td>
+                                        <td class="text-right">-</td>
+                                        <td class="text-right">2</td>
                                    
                                         
                                     </tr>
+                                    <thead>
+                                        <tr style="background-color: #f2f2f2; text-align: right;" >
+                                    
+                                            <td class="totalborder text-left ">
+                                                <strong>Totals</strong>
+                                            </td>
+                                            <td>
+                                                <b>2</b>
+                                            </td>
+                                            <td>
+                                                <b>3</b>
+
+                                            </td>
+                                            <td>
+                                                <b>1</b>
+
+                                            </td>
+                                            
+                                            <td>
+                                                <b>2</b>
+
+                                            </td>
+                                           
+                                        </tr>
+                                    </thead>
                  
                                     </tbody>
+
                           
                                 </table>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="row">
                                         <div class="col-12">
-                                            <div class="card">
+                                            <div class="card" id="chartTable">
                                                 <div class="card-body">
-                                                    <h4 class="card-title">Data Color Chart</h4>
                                                     <div id="data-color"></div>
                                                 </div>
                                             </div>
@@ -1728,6 +1753,7 @@
                     <div class="col-lg-3">
                         <div class="card">
                             <div class="card-body">
+                               
                                
                             </div>
                         </div>
@@ -2094,6 +2120,7 @@
     <script src="assets/libs/chartist/dist/chartist.min.js"></script>
     <script src="dist/js/pages/chartist/chartist-init.js"></script>
     <script src="dist/js/pages/chartist/ctpointlables.js"></script>
+    <script src="dist/js/pages/c3-chart/data/c3-data-color.js"></script>
 
     <script src="dist/js/pages/c3-chart/axis/c3-tick-fitting.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.js"></script>
@@ -2110,6 +2137,11 @@
     <script src="https://unpkg.com/@ag-grid-community/all-modules@25.0.0/dist/ag-grid-community.min.js"></script>
     <script src="dist/js/tables/contractors.js"></script>
     <script src="dist/js/cookies.js"></script>
+    <script>
+        $("#test").click(function(){
+  $("#chartTable").show();
+});
+    </script>
 
 
 </body>

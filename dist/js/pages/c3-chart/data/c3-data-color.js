@@ -7,12 +7,12 @@
 $(function() {
     var a = c3.generate({
         bindto: "#data-color",
-        size: { height: 400 },
+        size: { height: 200 },
         data: {
             columns: [
-                ["data1", 130, 200, 150, 40, 360, 50],
-                ["data2", 100, 130, 100, 240, 130, 350],
-                ["data3", 300, 240, 360, 400, 250, 250]
+                ["data1", 130, 200, 150, 40],
+                ["data2", 100, 130, 100, 240],
+                ["data3", 300, 240, 360, 400]
             ],
             type: "bar",
             colors: { data1: "#4fc3f7", data2: "#2962FF" },
