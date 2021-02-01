@@ -214,6 +214,9 @@ margin-top: -16px;
 }
 
 #chartTable{
+    display: block;
+}
+#chartTableDepartmenent{
     display: none;
 }
 .rowClick{

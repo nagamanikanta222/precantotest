@@ -1650,7 +1650,7 @@
                                    </tr>
                                     </thead>
                                     <tbody class="text-nowrap">
-                                        <tr id="test">
+                                        <tr id="core">
                                             <td>Core</td>
                                             <td class="text-right">1</td>
                                             <td class="text-right">-</td>
@@ -1659,7 +1659,7 @@
                                        
                                             
                                         </tr>
-                                        <tr>
+                                        <tr  id="engOps">
                                             <td>Eng Ops</td>
                                             <td class="text-right">-</td>
                                             <td class="text-right">1</td>
@@ -1728,10 +1728,106 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="row">
-                                        <div class="col-12">
+                                        <div class="col-12 ">
                                             <div class="card" id="chartTable">
-                                                <div class="card-body">
-                                                    <div id="data-color"></div>
+                                                <div class="card-body m-0 p-0">
+                                                    <div id="stacked-column"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="card " id="chartTableDepartmenent">
+                                                <div class="card-body m-0 p-0">
+                                                    <table class="small table table-sm table-hover">
+                                                        <thead class="thead-dark ">
+                                                
+                                                        <tr class="theme-color" >
+                                                            <th>Departments</th>
+                                                           <th class="text-center">Q1-PY</th>
+                                                           <th class="text-center">Q2-PY</th>
+                                                           <th class="text-center">Q3-PY</th>
+                                                           <th class="text-center">Q4-PY</th>
+                                                  
+                                                       </tr>
+                                                        </thead>
+                                                        <tbody class="text-nowrap">
+                                                            <tr >
+                                                                <td>Core</td>
+                                                                <td class="text-right">1</td>
+                                                                <td class="text-right">-</td>
+                                                                <td class="text-right">1</td>
+                                                                <td class="text-right">-</td>
+                                                           
+                                                                
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Eng Ops</td>
+                                                                <td class="text-right">-</td>
+                                                                <td class="text-right">1</td>
+                                                                <td class="text-right">-</td>
+                                                                <td class="text-right">-</td>
+                                                           
+                                                              
+                                                            </tr>                                           
+                                                             <tr>
+                                                                <td>Hardware</td>
+                                                                <td class="text-right">-</td>
+                                                                <td class="text-right">-</td>
+                                                                <td class="text-right">-</td>
+                                                                <td class="text-right">-</td>
+                                                            
+                                                               
+                                                            </tr>                                           
+                                                             <tr>
+                                                                <td>ML</td>
+                                                                <td class="text-right">1</td>
+                                                                <td class="text-right">2</td>
+                                                                <td class="text-right">-</td>
+                                                                <td class="text-right">-</td>
+                                                      
+                                                                
+                                                            </tr>
+                                                        <tr>
+                                                            <td>Platform</td>
+                                                            <td class="text-right">-</td>
+                                                            <td class="text-right">-</td>
+                                                            <td class="text-right">-</td>
+                                                            <td class="text-right">2</td>
+                                                       
+                                                            
+                                                        </tr>
+                                                        <thead>
+                                                            <tr style="background-color: #f2f2f2; text-align: right;" >
+                                                        
+                                                                <td class="totalborder text-left ">
+                                                                    <strong>Totals</strong>
+                                                                </td>
+                                                                <td>
+                                                                    <b>2</b>
+                                                                </td>
+                                                                <td>
+                                                                    <b>3</b>
+                    
+                                                                </td>
+                                                                <td>
+                                                                    <b>1</b>
+                    
+                                                                </td>
+                                                                
+                                                                <td>
+                                                                    <b>2</b>
+                    
+                                                                </td>
+                                                               
+                                                            </tr>
+                                                        </thead>
+                                     
+                                                        </tbody>
+                    
+                                              
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
@@ -2120,7 +2216,7 @@
     <script src="assets/libs/chartist/dist/chartist.min.js"></script>
     <script src="dist/js/pages/chartist/chartist-init.js"></script>
     <script src="dist/js/pages/chartist/ctpointlables.js"></script>
-    <script src="dist/js/pages/c3-chart/data/c3-data-color.js"></script>
+    <script src="dist/js/pages/c3-chart/bar-pie/c3-stacked-column.js"></script>
 
     <script src="dist/js/pages/c3-chart/axis/c3-tick-fitting.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.js"></script>
@@ -2138,8 +2234,15 @@
     <script src="dist/js/tables/contractors.js"></script>
     <script src="dist/js/cookies.js"></script>
     <script>
-        $("#test").click(function(){
+        $("#core").click(function(){
   $("#chartTable").show();
+  $("#chartTableDepartmenent").hide();
+
+});
+$("#engOps").click(function(){
+  $("#chartTable").hide();
+  $("#chartTableDepartmenent").show();
+
 });
     </script>
 

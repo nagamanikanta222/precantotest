@@ -1640,7 +1640,6 @@
                                     <div class="col-lg-3 filter-col">
                                         <p class="filter-title">Period</p>
                                         <select class="form-select form-control filter-container"  name="drop" id="">
-                                            <option value="" >Select Period</option>
                                             <option value="" >Q1 2021</option>
                                             <option value="">Q2 2021</option>
                                             <option value="">Q3 2021</option>
@@ -1657,7 +1656,6 @@
                                     <div class="col-lg-3 filter-col">
                                         <p class="filter-title">Location</p>
                                         <select class="form-select form-control filter-container"  name="drop" id="">
-                                            <option value="">Select Location</option>
                                             <option value="">MTV</option>
                                             <option value="">NY</option>
                                             <option value="">WDC</option>
@@ -1676,7 +1674,6 @@
                                     <div class="col-lg-3 filter-col">
                                         <p class="filter-title">Dept</p>
                                         <select class="form-select form-control filter-container"  name="drop" id="">
-                                            <option value="">Select Dept</option>
                                             <option value="">ENG</option>
                                             <option value="">HR</option>
                                             <option value="">ADM</option>
@@ -1691,8 +1688,7 @@
                                     <div class="col-lg-3 filter-col">
                                         <p class="filter-title">Sub-Dept</p>
                                         <select class="form-select form-control filter-container"  name="drop" id="">
-                                            <option value="">Select Sub Dept</option>
-                                            <option value="">sub-dept1</option>
+                                            <option value="">platform</option>
                                             <option value="">sub-dept2</option>
                                             <option value="">sub-dept3</option>
                                             <option value="">sub-dept4</option>
@@ -2208,16 +2204,45 @@
     <script src="dist/js/pages/dashboards/dashboard1.js"></script>
     <script src="https://unpkg.com/@ag-grid-community/all-modules@25.0.0/dist/ag-grid-community.min.js"></script>
     <script src="dist/js/tables/contractors.js"></script>
-    <script src="dist/js/cookies.js"></script>
 
+    <!-- cookie based authentication starts here -->
     <script>
-        $(document).ready(()=>{
-           $('.filter-container').on('change',()=>{
-               console.log(this.HTMLSelectElement)
-           })
-        })
-    </script>
-
+        function setCookie(cname,cvalue,exdays) {
+          var d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          var expires = "expires=" + d.toGMTString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        
+        function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+        
+        function checkCookie() {
+          var user=getCookie("username");
+          var user=getCookie("password");
+          if (user != "" && user =='precanto' && password=='12345') {
+            alert("Welcome again " + user);
+          } else {
+            // window.location.href="C:/Users/PraveenKumarNayakudi/Desktop/PrecantoClone_Feb1/precantotest/login.html"
+            // window.location.href="https://kalyanpre.github.io/precantotest/login.html"
+            window.location.href="login.html"
+          }
+        }
+        </script>
+  <!-- cookie based authentication ends here -->
 </body>
 
 </html>
