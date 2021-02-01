@@ -32,6 +32,11 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<style>
+    td{
+        text-align: right;
+    }
+</style>
 </head>
 
 
@@ -1715,7 +1720,7 @@
                                     </thead>
                                     <tbody class="text-nowrap">
                                         <tr>
-                                            <td>Core</td>
+                                            <td class="text-left">Core</td>
                                             <td>1856</td>
                                             <td>454</td>
                                             <td>21</td>
@@ -1726,7 +1731,7 @@
                                             
                                         </tr>
                                         <tr>
-                                            <td>Eng Ops</td>
+                                            <td class="text-left">Eng Ops</td>
                                             <td>396</td>
                                             <td>50</td>
                                             <td>-</td>
@@ -1737,7 +1742,7 @@
                                           
                                         </tr>                                           
                                          <tr>
-                                            <td>Hardware</td>
+                                            <td class="text-left">Hardware</td>
                                             <td>630</td>
                                             <td>203</td>
                                             <td>-</td>
@@ -1748,7 +1753,7 @@
                                            
                                         </tr>                                           
                                          <tr>
-                                            <td>ML</td>
+                                            <td class="text-left">ML</td>
                                             <td>788</td>
                                             <td>241</td>
                                             <td>-</td>
@@ -1759,7 +1764,7 @@
                                             
                                         </tr>
                                     <tr>
-                                        <td> <a  href="PayrollDetails.html"> <u>Platform</u>  </a> </td>
+                                        <td class="text-left"> <a  href="PayrollDetails.html"> <u>Platform</u>  </a> </td>
                                         <td>1938</td>
                                         <td>233</td>
                                         <td>-</td>
@@ -2324,6 +2329,10 @@
   <!-- cookie based authentication starts here -->
 
     <script>
+        $(document).ready(function(){
+            // Number.isInteger($('td').text())?$('td').addClass('text-right'):$('td').addClass('text-left')
+            // $('td').addClass('text-right')
+        })
         function setCookie(cname,cvalue,exdays) {
           var d = new Date();
           d.setTime(d.getTime() + (exdays*24*60*60*1000));
