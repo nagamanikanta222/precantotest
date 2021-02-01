@@ -202,6 +202,13 @@ margin-top: -16px;
 .filter-col{
     padding: 0;
 }
-.table th, .table td{
-    border: none;
+
+/* Ayodhya */
+
+.anchorTag a{
+    color: #6a7a8c !important;
+}
+
+.anchorTag:hover{
+    box-shadow: 1px 1px 10px #CCC ;
 }
