@@ -240,3 +240,8 @@ margin-top: -16px;
 .rowClick{
     cursor: pointer !important;
 }
+.add-scroll {
+    overflow-y: scroll;
+    height: 100px;
+  }
+  
