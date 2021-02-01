@@ -695,6 +695,12 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0 !important;
 }
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
 
 hr {
     box-sizing: content-box;
