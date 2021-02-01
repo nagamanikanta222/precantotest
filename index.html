@@ -34,10 +34,9 @@
 <![endif]-->
 </head>
 
-<body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
+
+<!-- <body onload="checkCookie()"> -->
+    <body>
     <div class="preloader">
         <div class="lds-ripple">
             <div class="lds-pos"></div>
@@ -1621,8 +1620,8 @@
 
                 <div class="card-group">
                     <div class="card">
-                        <div class="card-body">
-                            <a href="headcount.html"><div class="row">
+                        <div class="card-body anchorTag">
+                            <a href="Headcount.html"><div class="row">
                                 <div class="col-md-12">
                                    <div class="d-flex no-block align-items-center">
                                         <div>
@@ -1771,7 +1770,7 @@
                                                 Plan
                                             </td>
                                             <td>
-                                                Frsc
+                                                Forecast
                                             </td>
                                             <td>
                                                 Actuals
@@ -1950,6 +1949,47 @@
                         </div>
                     </div>
                 </div>
+
+              <div class="row">
+                  <div class="col-lg-3">
+                    <div class="card-group  m-0 p-0">
+                        <div class="card">
+                            <div class="card-body anchorTag">
+                                <a href="Payroll.html">
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="d-flex no-block align-items-center">
+                                            <div>
+                                                <h4 class="card-title">PAYROLL  ($s)</h4>
+                                            </div>
+                                            <div class="ml-auto">
+                                                <table class="text-muted font-light text-right">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Actual:&nbsp;</td>
+                                                            <td>$5.6M</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Fcst:&nbsp;</td>
+                                                            <td>$6.8M</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%; height: 6px;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div></a>
+                            </div>
+                        </div>
+               
+                    </div>
+                  </div>
+              </div>
 
              
 
@@ -2326,7 +2366,10 @@
     <script src="dist/js/pages/dashboards/dashboard1.js"></script>
     <script src="https://unpkg.com/@ag-grid-community/all-modules@25.0.0/dist/ag-grid-community.min.js"></script>
     <script src="dist/js/tables/contractors.js"></script>
+    <!-- <script src="dist/js/cookies.js"></script> -->
 
 </body>
+
+
 
 </html>

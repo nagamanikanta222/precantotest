@@ -220,3 +220,23 @@ margin-top: -16px;
     border-radius: 100%;
     background-color: black;
   }
+
+/* Ayodhya */
+
+.anchorTag a{
+    color: #6a7a8c !important;
+}
+
+.anchorTag:hover{
+    box-shadow: 1px 1px 10px #CCC ;
+}
+
+#chartTable{
+    display: block;
+}
+#chartTableDepartmenent{
+    display: none;
+}
+.rowClick{
+    cursor: pointer !important;
+}
