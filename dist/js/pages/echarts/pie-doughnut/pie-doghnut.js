@@ -438,8 +438,8 @@ $(function() {
             // Data style
             var dataStyle = {
                 normal: {
-                    label: {show: false},
-                    labelLine: {show: false}
+                    label: {show: true},
+                    labelLine: {show: true}
                 }
             };
 
@@ -456,7 +456,7 @@ $(function() {
             };
             var option = {
                 title: {
-                    // text: 'Are you Satisfied?',
+                 text: 'HC',
                     // subtext: 'Ahmedabad, India',
                     x: 'center',
                     y: 'center',
@@ -485,7 +485,7 @@ $(function() {
                 // },
 
                 // Add custom colors
-                color: ['#2962FF', '#4fc3f7', '#f62d51','#DC6788','#91CC75'],
+              color: ['#91CC75','#2962FF', '#4fc3f7', '#f62d51','#DC6788'],
  
                 // Add series
                 series: [
