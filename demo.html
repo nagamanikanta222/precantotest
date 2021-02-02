@@ -34,8 +34,7 @@
 <![endif]-->
 </head>
 
-<!-- <body onload="checkCookie()"> -->
-    <body>
+<body onload="checkCookie()">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -313,7 +312,7 @@
                                     <a class="dropdown-item" href="javascript:void(0)">
                                         <i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="javascript:void(0)">
+                                    <a class="dropdown-item" href="login.html">
                                         <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
                                     <div class="dropdown-divider"></div>
                                 </div>
@@ -1578,7 +1577,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="login.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="authentication-login1.html" aria-expanded="false">
                                 <i class="mdi mdi-directions"></i>
                                 <span class="hide-menu">Log Out</span>
                             </a>
@@ -1614,8 +1613,10 @@
                                     <li class="breadcrumb-item">
                                         <a href="Headcount.html">Headcount</a>
                                     </li>
-                                    <li class="breadcrumb-item active" aria-current="page">Payroll Details</li>
-                                    
+                                    <li class="breadcrumb-item">
+                                        <a href="Payroll.html">Payroll Details</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Sub Department</li>
                                 </ol>
                             </nav>
                         </div>
@@ -1624,241 +1625,223 @@
             </div>
      
             <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-lg-9">
-                       <div class="row">
-                        <div class="col-lg-4">
-                            <h4 style="bottom: 0px;
-                            position: absolute;" >My Query</h4>
-                        </div>
-      
-                    </div>
-                        <div class="card">
-                            <div class="card-body">
-                               
-                                   <div class="row">
-                                       <div class="col-lg-6">
-                                <table class="small table table-sm table-hover">
-                                    <thead class="thead-dark ">
-                            
-                                    <tr class="theme-color" >
-                                        <th>Departments</th>
-                                       <th class="text-center">Q1-PY</th>
-                                       <th class="text-center">Q2-PY</th>
-                                       <th class="text-center">Q3-PY</th>
-                                       <th class="text-center">Q4-PY</th>
-                              
-                                   </tr>
-                                    </thead>
-                                    <tbody class="text-nowrap">
-                                        <tr id="core">
-                                            <td>Core</td>
-                                            <td class="text-right">1</td>
-                                            <td class="text-right">-</td>
-                                            <td class="text-right">1</td>
-                                            <td class="text-right">-</td>
-                                       
-                                            
-                                        </tr>
-                                        <tr  id="engOps">
-                                            <td>Eng Ops</td>
-                                            <td class="text-right">-</td>
-                                            <td class="text-right">1</td>
-                                            <td class="text-right">-</td>
-                                            <td class="text-right">-</td>
-                                       
-                                          
-                                        </tr>                                           
-                                        <tr id="core">
-                                            <td>Hardware</td>
-                                            <td class="text-right">-</td>
-                                            <td class="text-right">-</td>
-                                            <td class="text-right">-</td>
-                                            <td class="text-right">-</td>
-                                        
-                                           
-                                        </tr>                                           
-                                        <tr  id="engOps">
-                                            <td>ML</td>
-                                            <td class="text-right">1</td>
-                                            <td class="text-right">2</td>
-                                            <td class="text-right">-</td>
-                                            <td class="text-right">-</td>
-                                  
-                                            
-                                        </tr>
-                                        <tr id="core">
-                                            <td>Platform</td>
-                                        <td class="text-right">-</td>
-                                        <td class="text-right">-</td>
-                                        <td class="text-right">-</td>
-                                        <td class="text-right">2</td>
-                                   
-                                        
-                                    </tr>
-                                    <thead>
-                                        <tr style="background-color: #f2f2f2; text-align: right;" >
-                                    
-                                            <td class="totalborder text-left ">
-                                                <strong>Totals</strong>
-                                            </td>
-                                            <td>
-                                                <b>2</b>
-                                            </td>
-                                            <td>
-                                                <b>3</b>
-
-                                            </td>
-                                            <td>
-                                                <b>1</b>
-
-                                            </td>
-                                            
-                                            <td>
-                                                <b>2</b>
-
-                                            </td>
-                                           
-                                        </tr>
-                                    </thead>
-                 
-                                    </tbody>
-
-                          
-                                </table>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="row">
-                                        <div class="col-12 ">
-                                            <div class="card" id="chartTable">
-                                                <div class="card-body m-0 p-0">
-                                                    <div id="stacked-column"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4 style="bottom: 0px;
+                            position: absolute;" >Sub Department</h4>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-3 filter-col">
+                                        <p class="filter-title">Period</p>
+                                        <select class="form-select form-control filter-container"  name="drop" id="">
+                                            <option value="" >Q1 2021</option>
+                                            <option value="">Q2 2021</option>
+                                            <option value="">Q3 2021</option>
+                                            <option value="">Q4 2021</option>
+                                            <option value="">Q1 2020</option>
+                                            <option value="">Q2 2020</option>
+                                            <option value="">Q3 2020</option>
+                                            <option value="">Q4 2020</option>
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16" >
+                                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                                          </svg>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="card " id="chartTableDepartmenent">
-                                                <div class="card-body m-0 p-0">
-                                                    <table class="small table table-sm table-hover">
-                                                        <thead class="thead-dark ">
-                                                
-                                                        <tr class="theme-color" >
-                                                            <th>Departments</th>
-                                                           <th class="text-center">Q1-PY</th>
-                                                           <th class="text-center">Q2-PY</th>
-                                                           <th class="text-center">Q3-PY</th>
-                                                           <th class="text-center">Q4-PY</th>
-                                                  
-                                                       </tr>
-                                                        </thead>
-                                                        <tbody class="text-nowrap">
-                                                            <tr >
-                                                                <td>Core</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">-</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">-</td>
-                                                           
-                                                                
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Eng Ops</td>
-                                                                <td class="text-right">-</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">-</td>
-                                                                <td class="text-right">-</td>
-                                                           
-                                                              
-                                                            </tr>                                           
-                                                             <tr>
-                                                                <td>Hardware</td>
-                                                                <td class="text-right">-</td>
-                                                                <td class="text-right">-</td>
-                                                                <td class="text-right">-</td>
-                                                                <td class="text-right">-</td>
-                                                            
-                                                               
-                                                            </tr>                                           
-                                                             <tr>
-                                                                <td>ML</td>
-                                                                <td class="text-right">1</td>
-                                                                <td class="text-right">2</td>
-                                                                <td class="text-right">-</td>
-                                                                <td class="text-right">-</td>
-                                                      
-                                                                
-                                                            </tr>
-                                                        <tr>
-                                                            <td>Platform</td>
-                                                            <td class="text-right">-</td>
-                                                            <td class="text-right">-</td>
-                                                            <td class="text-right">-</td>
-                                                            <td class="text-right">2</td>
-                                                       
-                                                            
-                                                        </tr>
-                                                        <thead>
-                                                            <tr style="background-color: #f2f2f2; text-align: right;" >
-                                                        
-                                                                <td class="totalborder text-left ">
-                                                                    <strong>Totals</strong>
-                                                                </td>
-                                                                <td>
-                                                                    <b>2</b>
-                                                                </td>
-                                                                <td>
-                                                                    <b>3</b>
-                    
-                                                                </td>
-                                                                <td>
-                                                                    <b>1</b>
-                    
-                                                                </td>
-                                                                
-                                                                <td>
-                                                                    <b>2</b>
-                    
-                                                                </td>
-                                                               
-                                                            </tr>
-                                                        </thead>
-                                     
-                                                        </tbody>
-                    
-                                              
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                
-                                </div>
-                                
-
-                                
-                                
-                                  
+                                    <div class="col-lg-3 filter-col">
+                                        <p class="filter-title">Location</p>
+                                        <select class="form-select form-control filter-container"  name="drop" id="">
+                                            <option value="">MTV</option>
+                                            <option value="">NY</option>
+                                            <option value="">WDC</option>
+                                            <option value="">SFC</option>
+                                            <option value="">BBY</option>
+                                            <option value="">DEL</option>
+                                            <option value="">HYD</option>
+                                            <option value="">KKR</option>
+                                            <option value="">SRH</option>
+                                        </select>
                                         
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+                                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="col-lg-3 filter-col">
+                                        <p class="filter-title">Dept</p>
+                                        <select class="form-select form-control filter-container"  name="drop" id="">
+                                            <option value="">ENG</option>
+                                            <option value="">HR</option>
+                                            <option value="">ADM</option>
+                                            <option value="">ACCT</option>
+                                            <option value="">TRAN</option>
+                                            <option value="">MED</option>
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+                                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="col-lg-3 filter-col">
+                                        <p class="filter-title">Sub-Dept</p>
+                                        <select class="form-select form-control filter-container"  name="drop" id="">
+                                            <option value="">platform</option>
+                                            <option value="">sub-dept2</option>
+                                            <option value="">sub-dept3</option>
+                                            <option value="">sub-dept4</option>
+                                            <option value="">sub-dept5</option>
+                                            <option value="">sub-dept6</option>
+                                        </select>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+                                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                                          </svg>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
-       
-                    </div>
-                    <div class="col-lg-3">
                         <div class="card">
                             <div class="card-body">
                                
+                                <div class="table-responsive">
+                                    <table class="table table-sm small">
+                                        <thead class="bg-primary text-white theme-color">
+                                            <tr>
+                                                <th>GL</th>
+                                                <th>Sub-Dept</th>
+                                                <th>Actual</th>
+                                                <th>Starts</th>
+                                                <th>Pending</th>
+                                                <th>Terms</th>
+                                                <th>Transfers</th>
+                                                <th>TBHs</th>
+                                                <th>Forecast</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-right">6001</td>
+                                                <td class="text-left">Base Pay</td>
+                                                <td class="text-right">1540</td>
+                                                <td class="text-right">185</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">(31)</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">31</td>
+                                                <td class="text-right">1725</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">6002</td>
+                                                <td class="text-left">Benefits</td>
+                                                <td class="text-right">169</td>
+                                                <td class="text-right">20</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">(3)</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">3</td>
+                                                <td class="text-right">190</td>
+                                            </tr>                                            <tr>
+                                                <td class="text-right">6003</td>
+                                                <td class="text-left"> Payroll Taxes</td>
+                                                <td class="text-right">118</td>
+                                                <td class="text-right">14</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">(2)</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">2</td>
+                                                <td class="text-right">132</td>
+                                            </tr>                                            <tr>
+                                                <td class="text-right">6004</td>
+                                                <td class="text-left">Corporate Bonus</td>
+                                                <td class="text-right">85</td>
+                                                <td class="text-right">10</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">(2)</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">2</td>
+                                                <td class="text-right">95</td>
+                                            </tr>
+                                            </tr>                                            <tr>
+                                                <td class="text-right">6005</td>
+                                                <td class="text-left">Employer retirement</td>
+                                                <td class="text-right">26</td>
+                                                <td class="text-right">3</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">(1)</td>
+                                                <td class="text-right">-</td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">29</td>
+                                            </tr>
+                                        </tbody>
+                                        <thead>
+                                            <tr style="background-color: #f2f2f2;" >
+                                                <td class="text-left text-dark totalborder">
+                                                    Totals
+                                                </td>
+                                                <td class="totalborder">
+                                                    Totals
+                                                </td>
+                                                <td class="text-right">
+                                                    1,938
+                                                </td>
+                                                <td class="text-right">
+                                                    233
+                                                </td>
+                                                <td class="text-right">
+                                                    -
+                                                </td>
+                                                
+                                                <td class="text-right">
+                                                    (39)
+                                                </td>
+                                               <td class="text-right">
+                                                   -
+                                               </td>
+                                                <td class="totalborder text-right">
+                                                    39
+                                                </td>
+                                                <td class="text-right">
+                                                  2170
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+
+                        <div class="row">
+                           <div class="col-lg-12">
+                            <h4 class="insights">INSIGHTS</h4>
+                           </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
                                
                             </div>
                         </div>
                     </div>
                 </div>
-                
-              
-
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
             </div>
 
         </div>
@@ -2217,7 +2200,6 @@
     <script src="assets/libs/chartist/dist/chartist.min.js"></script>
     <script src="dist/js/pages/chartist/chartist-init.js"></script>
     <script src="dist/js/pages/chartist/ctpointlables.js"></script>
-    <script src="dist/js/pages/c3-chart/bar-pie/c3-stacked-column.js"></script>
 
     <script src="dist/js/pages/c3-chart/axis/c3-tick-fitting.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.js"></script>
@@ -2233,20 +2215,47 @@
     <script src="dist/js/pages/dashboards/dashboard1.js"></script>
     <script src="https://unpkg.com/@ag-grid-community/all-modules@25.0.0/dist/ag-grid-community.min.js"></script>
     <script src="dist/js/tables/contractors.js"></script>
-    <script>
-        $("#core").click(function(){
-  $("#chartTable").show();
-  $("#chartTableDepartmenent").hide();
 
-});
-$("#engOps").click(function(){
-  $("#chartTable").hide();
-  $("#chartTableDepartmenent").show();
+    <script src="dist/js/cookies.js"></script>
 
-});
-    </script>
-
-
+    <!-- cookie based authentication starts here -->
+    <!-- <script>
+        function setCookie(cname,cvalue,exdays) {
+          var d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          var expires = "expires=" + d.toGMTString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        
+        function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+        
+        function checkCookie() {
+          var user=getCookie("username");
+          var user=getCookie("password");
+          if (user != "" && user =='precanto' && password=='12345') {
+            alert("Welcome again " + user);
+          } else {
+            // window.location.href="C:/Users/PraveenKumarNayakudi/Desktop/PrecantoClone_Feb1/precantotest/login.html"
+            // window.location.href="https://kalyanpre.github.io/precantotest/login.html"
+            window.location.href="login.html"
+          }
+        }
+        </script> -->
+  <!-- cookie based authentication ends here -->
 </body>
 
 </html>
