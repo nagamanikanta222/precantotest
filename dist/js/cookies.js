@@ -28,7 +28,7 @@
     
     function checkCookie() {
       var user=getCookie("username");
-      var user=getCookie("password");
+      var password=getCookie("password");
       if (user != "" && user =='precanto' && password=='12345') {
         alert("Welcome again " + user);
       } else {
