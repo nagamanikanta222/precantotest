@@ -5,7 +5,10 @@ $(function() {
     new Chartist.Line('.ct-sm-line-chart', {
         labels: ['Q1(A)', 'Q2(A)', 'Q3(F)', 'Q4(P)'],
         series: [
-            [85, 115, 139, 199]
+            [85, 115, 139, 199],
+            [110, 125, 156, 220],
+            [199, 145, 175, 241]
+
          
         ]
     }, {
@@ -17,14 +20,14 @@ $(function() {
         plugins: [
 
             Chartist.plugins.tooltip(),
-            ctPointLabels({
-                textAnchor: 'middle',
-                labelOffset:{x:0,y:-7} 
+            // ctPointLabels({
+            //     textAnchor: 'middle',
+            //     labelOffset:{x:0,y:-7} 
 
-            }),
+            // }),
        
         ],
-        showArea: true,
+        showArea: false,
         chartPadding: {
             right: 40
         }
@@ -82,11 +85,12 @@ $(function() {
     // ct-animation-chart
 
     var chart = new Chartist.Line('.ct-animation-chart', {
-        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        labels: ['Q1(A)', 'Q2(A)', 'Q3(F)', 'Q4(P)'],
         series: [
-            [12, 9, 7, 8, 5, 4, 6, 2, 3, 3, 4, 6],
-            [4, 5, 3, 7, 3, 5, 5, 3, 4, 4, 5, 5],
-            [5, 3, 4, 5, 6, 3, 3, 4, 5, 6, 3, 4]
+            [85, 115, 139, 199],
+            [110, 125, 156, 220],
+            [199, 145, 175, 241]
+
         ]
     }, {
         low: 0
@@ -178,7 +182,7 @@ $(function() {
             var pos2Animation = {
                 begin: seq * delays,
                 dur: durations,
-                from: data[data.axis.units.pos + '2'] - 100,
+                from: data[data.axis.units.pos + '1'] - 100,
                 to: data[data.axis.units.pos + '2'],
                 easing: 'easeOutQuart'
             };
