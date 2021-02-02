@@ -208,12 +208,6 @@ margin-top: -16px;
 .table-bordered{
     border: 0px !important;
 }
-.tbldisplayblck{
-    display: block;
-}
-.tbldisplayne{
-    display: none;
-}
 .carousel-indicators li {
     width: 10px;
     height: 10px;
