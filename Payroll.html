@@ -32,11 +32,15 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<style>
+    td{
+        text-align: right;
+    }
+</style>
 </head>
 
 
-<!-- <body onload="checkCookie()"> -->
-    <body>
+<body onload="checkCookie()">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -1579,7 +1583,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="authentication-login1.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="login.html" aria-expanded="false">
                                 <i class="mdi mdi-directions"></i>
                                 <span class="hide-menu">Log Out</span>
                             </a>
@@ -1715,7 +1719,7 @@
                                     </thead>
                                     <tbody class="text-nowrap">
                                         <tr>
-                                            <td>Core</td>
+                                            <td class="text-left">Core</td>
                                             <td>1856</td>
                                             <td>454</td>
                                             <td>21</td>
@@ -1726,7 +1730,7 @@
                                             
                                         </tr>
                                         <tr>
-                                            <td>Eng Ops</td>
+                                            <td class="text-left">Eng Ops</td>
                                             <td>396</td>
                                             <td>50</td>
                                             <td>-</td>
@@ -1737,7 +1741,7 @@
                                           
                                         </tr>                                           
                                          <tr>
-                                            <td>Hardware</td>
+                                            <td class="text-left">Hardware</td>
                                             <td>630</td>
                                             <td>203</td>
                                             <td>-</td>
@@ -1748,7 +1752,7 @@
                                            
                                         </tr>                                           
                                          <tr>
-                                            <td>ML</td>
+                                            <td class="text-left">ML</td>
                                             <td>788</td>
                                             <td>241</td>
                                             <td>-</td>
@@ -1759,7 +1763,7 @@
                                             
                                         </tr>
                                     <tr>
-                                        <td> <a  href="PayrollDetails.html"> <u>Platform</u>  </a> </td>
+                                        <td class="text-left"> <a  href="PayrollDetails.html"> <u>Platform</u>  </a> </td>
                                         <td>1938</td>
                                         <td>233</td>
                                         <td>-</td>
@@ -1848,31 +1852,31 @@
                                     </thead>
                                     <tbody class="text-nowrap">
                                         <tr>
-                                            <td>Core</td>
+                                            <td class="text-left">Core</td>
                                             <td>165 K</td>
                                             
                                             
                                         </tr>
                                         <tr>
-                                            <td>Eng Ops</td>
+                                            <td class="text-left">Eng Ops</td>
                                             <td>132 K</td>
                                             
                                           
                                         </tr>                                           
                                          <tr>
-                                            <td>Hardware</td>
+                                            <td class="text-left">Hardware</td>
                                             <td>180 K</td>
                                             
                                            
                                         </tr>                                           
                                          <tr>
-                                            <td>ML</td>
+                                            <td class="text-left">ML</td>
                                             <td>175 K</td>
                                             
                                             
                                         </tr>
                                     <tr>
-                                        <td>Platform</td>
+                                        <td class="text-left">Platform</td>
                                         <td>155 K</td>
                                         
                                         
@@ -1900,34 +1904,34 @@
                                     </thead>
                                     <tbody class="text-nowrap">
                                         <tr>
-                                            <td>Eng Ops</td>
+                                            <td class="text-left">Eng Ops</td>
                                             <td>2</td>
                                             <td>3.7%</td>
                                             
                                             
                                         </tr>
                                         <tr>
-                                            <td>ML</td>
+                                            <td class="text-left">ML</td>
                                             <td>12</td>
                                             <td>7.6%</td>
                                             
                                           
                                         </tr>                                           
                                          <tr>
-                                            <td>Platform</td>
+                                            <td class="text-left">Platform</td>
                                             <td>13</td>
                                             <td>5.6%</td>
                                             
                                            
                                         </tr>                                           
                                          <tr>
-                                            <td>ML</td>
+                                            <td class="text-left">ML</td>
                                             <td>175 K</td>
                                             
                                             
                                         </tr>
                                     <tr>
-                                        <td>Core</td>
+                                        <td class="text-left">Core</td>
                                         <td>17</td>
                                         <td>11.0%</td>
                                         
@@ -2318,50 +2322,7 @@
     <script src="dist/js/pages/dashboards/dashboard1.js"></script>
     <script src="https://unpkg.com/@ag-grid-community/all-modules@25.0.0/dist/ag-grid-community.min.js"></script>
     <script src="dist/js/tables/contractors.js"></script>
-    <!-- <script src="dist/js/cookies.js"></script> -->
-
-
-  <!-- cookie based authentication starts here -->
-
-    <script>
-        function setCookie(cname,cvalue,exdays) {
-          var d = new Date();
-          d.setTime(d.getTime() + (exdays*24*60*60*1000));
-          var expires = "expires=" + d.toGMTString();
-          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        }
-        
-        function getCookie(cname) {
-          var name = cname + "=";
-          var decodedCookie = decodeURIComponent(document.cookie);
-          var ca = decodedCookie.split(';');
-          for(var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-            }
-          }
-          return "";
-        }
-        
-        function checkCookie() {
-          var user=getCookie("username");
-          var user=getCookie("password");
-          if (user != "" && user =='precanto' && password=='12345') {
-            alert("Welcome again " + user);
-          } else {
-            // window.location.href="C:/Users/PraveenKumarNayakudi/Desktop/PrecantoClone_Feb1/precantotest/login.html"
-            // window.location.href="https://kalyanpre.github.io/precantotest/login.html"
-            window.location.href="login.html"
-
-          }
-        }
-        
-        </script>
-  <!-- cookie based authentication ends here -->
+    <script src="dist/js/cookies.js"></script>
 
 </body>
 
