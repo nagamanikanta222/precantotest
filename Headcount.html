@@ -1689,15 +1689,15 @@
                                 <div class="row">
                                     <div class="col-12 m-0 p-0">
                                                                 <ul class="sqaurebox" >
-                                                                    <li>
-                                                                        <i class="mdi mdi-eye square  "></i>
+                                                                    <li class="square" >
+                                                                        <i class="mdi mdi-eye"></i>
                                                                     </li>
                                                                     
-                                                                    <li>
-                                                                        <i class="mdi mdi-share square  "></i>
+                                                                    <li class="square" style="margin-right: 2px;">
+                                                                        <i class="mdi mdi-share"></i>
                                                                     </li>
-                                                                    <li>
-                                                                        <i class="mdi mdi-chart-bar square  "></i>
+                                                                    <li class="square" style="margin-right: 2px;">
+                                                                        <i class="mdi mdi-chart-bar"></i>
                                                                     </li>
                                                                     
                                                                 </ul>   
@@ -1811,7 +1811,7 @@
                                                 5
                                             </td>
                                             <td>
-                                                1.99
+                                                1s99
                                             </td>
                                         </tr>
                                     </thead>
@@ -1841,12 +1841,12 @@
                                         
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card tbldisplayne" id="empcard">
                             <div class="card-body">
                                
                                
                                     <div class="table-responsive">
-                                        <table class="table table-sm small tbldisplayne" id="emptbl">
+                                        <table class="table table-sm small " id="emptbl">
                                             <thead class="bg-primary text-white theme-color " >
                                                 <tr>
                                                     <th >EmployeeID</th>
@@ -2371,14 +2371,14 @@
 
           $("#HCCore").click(function(){
 
-           if($('#emptbl').hasClass('tbldisplayne')) 
+           if($('#empcard').hasClass('tbldisplayne')) 
            {
-            $('#emptbl').removeClass('tbldisplayne');
-            $('#emptbl').addClass('tbldisplayblck')
+            $('#empcard').removeClass('tbldisplayne');
+            $('#empcard').addClass('tbldisplayblck')
            }
            else{
-            $('#emptbl').removeClass('tbldisplayblck');
-            $('#emptbl').addClass('tbldisplayne')
+            $('#empcard').removeClass('tbldisplayblck');
+            $('#empcard').addClass('tbldisplayne')
            }
              
   
