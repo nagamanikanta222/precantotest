@@ -35,8 +35,7 @@
 </head>
 
 
-<!-- <body onload="checkCookie()"> -->
-    <body>
+<body onload="checkCookie()">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -1579,7 +1578,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="authentication-login1.html" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="login.html" aria-expanded="false">
                                 <i class="mdi mdi-directions"></i>
                                 <span class="hide-menu">Log Out</span>
                             </a>
@@ -1686,9 +1685,26 @@
                     </div>
                         <div class="card">
                             <div class="card-body">
-                               
+                                <div class="row">
+                                    <div class="col-12 m-0 p-0">
+                                                                <ul class="sqaurebox" >
+                                                                    <li>
+                                                                        <i class="mdi mdi-eye square  "></i>
+                                                                    </li>
+                                                                    
+                                                                    <li>
+                                                                        <i class="mdi mdi-share square  "></i>
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="mdi mdi-chart-bar square  "></i>
+                                                                    </li>
+                                                                    
+                                                                </ul>   
+                                                                   
+                                                                </div>
+                                    </div>
                                    <div class="row">
-                                       <div class="col-11">
+                                       <div class="col-12">
                                 <table class="small table table-sm table-hover">
                                     <thead class="thead-dark ">
                                         <tr>
@@ -1713,7 +1729,7 @@
                                     </thead>
                                     <tbody class="text-nowrap">
                                         <tr>
-                                            <td>Core</td>
+                                            <td id="HCCore" class="text-left" ><a href="#">  <u>Core</u></a> </td>
                                             <td>45</td>
                                             <td>22</td>
                                             <td>1</td>
@@ -1724,7 +1740,7 @@
                                             
                                         </tr>
                                         <tr>
-                                            <td>Eng Ops</td>
+                                            <td id="HCEng" class="text-left">Eng Ops</td>
                                             <td>12</td>
                                             <td>3</td>
                                             <td>0</td>
@@ -1735,7 +1751,7 @@
                                           
                                         </tr>                                           
                                          <tr>
-                                            <td>Hardware</td>
+                                            <td id="HCHW" class="text-left">Hardware</td>
                                             <td>14</td>
                                             <td>9</td>
                                             <td>0</td>
@@ -1746,7 +1762,7 @@
                                            
                                         </tr>                                           
                                          <tr>
-                                            <td>ML</td>
+                                            <td id="HCML" class="text-left">ML</td>
                                             <td>18</td>
                                             <td>11</td>
                                             <td>0</td>
@@ -1757,7 +1773,7 @@
                                             
                                         </tr>
                                     <tr>
-                                        <td><a  href="Payroll.html"> <u>Platform</u>  </a> </td>
+                                        <td id="HCPF" class="text-left">Platform</td>
                                         <td>50</td>
                                         <td>12</td>
                                         <td>0</td>
@@ -1800,20 +1816,20 @@
                                     </thead>
                                 </table>
                                 </div>
-                                <div class="col-1 m-0 p-0" >
+                                <!-- <div class="col-1 m-0 p-0" >
                                 <ul class="sqaurebox">
                                     <li>
                                         <i class="mdi mdi-chart-bar square  "></i>
                                     </li>
                                     <li>
-                                        <i class="mdi mdi-chart-bar square  "></i>
+                                        <i class="mdi mdi-share square  "></i>
                                     </li>
                                     <li>
                                         <i class="mdi mdi-eye square  "></i>
                                     </li>
                                 </ul>   
                                    
-                                </div>
+                                </div> -->
                                 
                                 </div>
                                 
@@ -1826,7 +1842,73 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-
+                               
+                               
+                                    <div class="table-responsive">
+                                        <table class="table table-sm small tbldisplayne" id="emptbl">
+                                            <thead class="bg-primary text-white theme-color " >
+                                                <tr>
+                                                    <th >EmployeeID</th>
+                                                    <th >Name</th>
+                                                    <th >Start Date</th>
+                                                    <th >Term Date</th>
+                                                    <th >Department</th>
+                                                    <th >Sub-Department</th>
+                                                    <th >Location</th>
+                                                    <th>Job</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1019</td>
+                                            <td >LastName19</td>
+                                            <td>4/15/2019</td>
+                                            <td></td>
+                                            <td>Engineering</td>
+                                            <td>Core</td>
+                                            <td>MTV</td>
+                                            <td>Software Engineer</td>
+                                                </tr>
+                                                        <tr>
+                                                          
+                                                            <td id="HCCore" class="text-left" >1187</td>
+                                                            <td class="text-left">LastName87</td>
+                                                            <td>6/14/2019</td>
+                                                            <td></td>
+                                                            <td class="text-left">Engineering</td>
+                                                            <td class="text-left">Core</td>
+                                                            <td class="text-left">MTV</td>
+                                                            <td class="text-left">Software Engineer</td>
+                                                          
+                                                        </tr>  
+                                                        <tr>
+                                                           
+                                                            <td id="HCCore" >375</td>
+                                                            <td class="text-left">LastName37</td>
+                                                            <td>3/6/2015</td>
+                                                            <td></td>
+                                                            <td class="text-left">Engineering</td>
+                                                            <td class="text-left">Core</td>
+                                                            <td class="text-left">MTV</td>
+                                                            <td class="text-left">Engineer Manager</td>
+                                                           
+                                                        </tr> 
+                                                        <tr>
+                                                            <td id="HCML">344</td>
+                                                            <td class="text-left">LastName644</td>
+                                                            <td class="text-left">7/15/2017</td>
+                                                            <td class="text-left">4/19/2020</td>
+                                                            <td class="text-left">Engineering</td>
+                                                            <td class="text-left">Core</td>
+                                                            <td class="text-left">MTV</td>
+                                                            <td class="text-left">Dir,Engineering</td>
+                                                            
+                                                        </tr>
+                                            </tbody>
+                                         
+                                        </table>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1834,7 +1916,60 @@
                         <h5 class="text-right pt-3" >INSIGHTS</h5>
                         <div class="card">
                             <div class="card-body">
-                                <div id="pole-chart" style="width:100%;height:300px" ></div>
+                                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                   
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <div id="pole-chart" style="height:400px;"></div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="pole-chart1" style="height:400px;"></div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="pole-chart2" style="height:400px;"></div>
+                                        </div>
+                                    </div>
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                    </ol>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <img class="img-fluid" src="assets/images/big/img3.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="assets/images/big/img4.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="assets/images/big/img5.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div> -->
+                               
                             </div>
                         </div>
                     </div>
@@ -2179,6 +2314,7 @@
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    
     <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -2214,9 +2350,76 @@
     <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
     <script src="dist/js/pages/dashboards/dashboard1.js"></script>
     <script src="https://unpkg.com/@ag-grid-community/all-modules@25.0.0/dist/ag-grid-community.min.js"></script>
-    <script src="dist/js/tables/contractors.js"></script>
+    <!-- <script src="dist/js/tables/contractors.js"></script> -->
+    <script src="assets/libs/echarts/dist/echarts-en.min.js"></script>
     <script src="dist/js/pages/echarts/pie-doughnut/pie-doghnut.js"></script>
-        <!-- <script src="dist/js/cookies.js"></script> -->
+    <script src="dist/js/cookies.js"></script>
+   
+    <script type="text/javascript"> 
+        $(document).ready(function () { 
+        // Number.isInteger($('td').html())?$('td').css('text-align','right'):$('td').addClass('text-align','left')
+        $('td').css('text-align','right')
+          // Use the given data to create  
+          // the table and display it 
+    //       $('#emptbl').bootstrapTable({ 
+    //         data: mydata ,
+    //         formatLoadingMessage: function() {
+    //     return '';
+    // }
+    //       }); 
+   
+
+          $("#HCCore").click(function(){
+
+           if($('#emptbl').hasClass('tbldisplayne')) 
+           {
+            $('#emptbl').removeClass('tbldisplayne');
+            $('#emptbl').addClass('tbldisplayblck')
+           }
+           else{
+            $('#emptbl').removeClass('tbldisplayblck');
+            $('#emptbl').addClass('tbldisplayne')
+           }
+             
+  
+});
+$('.carousel').carousel({
+  interval: false,
+});
+        }); 
+
+        
+      
+        // Specify the JSON data to be displayed 
+        var mydata = 
+          [ 
+            { 
+              "empid": "1", 
+              "Name": "Mark Smith", 
+              "StartDate": "25/5/2020" ,
+                "TermDate":"25/5/2020",
+                "Dept":"Engineering",
+                "SubDept":"Core",
+                "Loc":"hyd",
+                "Job":"Software Engineer"
+            }
+            
+          ]; 
+
+
+          var coredata=[
+              {
+                "empid": "1", 
+              "Name": "Mark Smith", 
+              "StartDate": "25/5/2020" ,
+                "TermDate":"25/5/2020",
+                "Dept":"Engineering",
+                "SubDept":"Core1",
+                "Loc":"hyd",
+                "Job":"Software Engineer" 
+              }
+          ]
+      </script> 
 
 
 </body>

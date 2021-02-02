@@ -1,6 +1,7 @@
 $(function() {
     "use strict";
-
+    // Number.isInteger($('td').html())?$('td').css('text-align','right'):$('td').css('text-align','left')
+    
     $(".preloader").fadeOut();
     // ==============================================================
     // sidebar-hover
@@ -136,6 +137,7 @@ $(function() {
         //replace the "Choose a file" label
         $(this).next('.custom-file-label').html(fileName);
     })
+
 });
 
 
