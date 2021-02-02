@@ -27,7 +27,7 @@
       var user=getCookie("username");
       var password=getCookie("password");
       if (user != "" && user =='precanto' && password=='12345') {
-        alert("Welcome again " + user);
+        // alert("Welcome again " + user);
       } else {
         // window.location.href="C:/Users/PraveenKumarNayakudi/Desktop/PrecantoClone_Feb1/precantotest/login.html"
         // window.location.href="https://kalyanpre.github.io/precantotest/login.html"
